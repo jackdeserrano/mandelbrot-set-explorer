@@ -5,7 +5,6 @@
 \usepackage{hyperref}
 \usepackage{enumitem}
 \usetikzlibrary{arrows}
-% \usepackage{beamerthemesplit}  % Activate for custom appearance
 
 \title{Mandelbrot Set Explorer}
 \author{Jack DeSerrano}
@@ -286,104 +285,51 @@ $$
 \end{itemize}
 }
 
-\frame
-{
-The Mandelbrot set has infinite detail, a fact of which this program takes full advantage.
-}
-\section{The program}
-\frame 
-{
-\begin{itemize}
-\item <1->The program: an easy-to-use interactive Mandelbrot set viewer in which the user can zoom, change colour schemes, save images, and open previously saved images.
-
-\item <2->On startup:
-\begin{figure}
-\centering
-\includegraphics[scale=0.2]{presentation_images/startup_set} 
-\end{figure}
-\end{itemize}
-
-}
-\subsection{Colour schemes}
+\section{}
 \frame
 {
 \begin{itemize}
-\item <1-> Colour schemes: \\\text{}\\
-\item <2->1. Distance estimator (\texttt{d})
-\item <3->Uses an algorithm by R. Munafo to approximate the distance from a point to the nearest point in the Mandelbrot set.
-\item <4->Gives a rainbow effect.
-\item <5->The default colouring. The colouring changes as you zoom in.
-\end{itemize}
-
-}
-
-\frame
-{
-\begin{itemize}
-\item <1-> 2. Classic colouring (\texttt{c})
-\item <2-> Uses the normalized iteration count algorithm to map a point's rate of divergence to a colour.
-\item <3-> Smooths the colour gradient out. \\\text{}\\
-\item <4-> 3. Grayscale (\texttt{g})
-\item <5-> No colour, black represents a colour in the set. \\\text{}\\
-\item <6-> 4. Inverse grayscale (\texttt{i})
-\item <7-> Inverse of grayscale.
+\item <1-> What I hoped to achieve with my program:\\\text{}\\
+\item <2-> A program that allows the user to explore the Mandelbrot set, switch between a myriad of colourings, save zooms, reopen zooms, and generate Julia sets.
 \end{itemize}
 }
 
 \frame
 {
-\begin{figure}
-\centering
-\includegraphics[scale=0.3]{presentation_images/classic_colouring} 
-\end{figure}
-}
-
-\frame
-{
-\begin{figure}
-\centering
-\includegraphics[scale=0.3]{presentation_images/grayscale} 
-\end{figure}
-}
-
-\frame
-{
-\begin{figure}
-\centering
-\includegraphics[scale=0.3]{presentation_images/inverse_grayscale} 
-\end{figure}
-}
-
-\subsection{Other functions}
-\frame
-{
 \begin{itemize}
-\item<1-> The program lets you save a set you like and come back to it later.
-\item<2-> \begin{figure}
-\centering
-\includegraphics[scale=0.25]{presentation_images/save_image} 
-\end{figure}
-\end{itemize}
-}
-
-\subsection{Challenges, setbacks, etc.}
-\frame
-{
-\begin{itemize}
-\item<1-> Challenges and setbacks:\\\text{}\\
-\item<2-> 1. Displaying the set to the window and getting the zoom function to respond.\\\text{}\\
-\item<3-> 2. Colouring, colouring, and more colouring.\\\text{}\\
-\item<4-> 3. Minimizing speed.
+\item <1-> What I learned:\\\text{}\\
+\item <2-> Tkinter, NumPy array manipulation\\
+\item <3-> Display methods\\
+\item <4-> Various colouring methods/algorithms and the mathematics behind them\\
+\item <5-> Patience\\
+\item <6-> Ultimately, more mathematics than programming
 \end{itemize}
 }
 
 \frame
 {
-
 \begin{itemize}
-\item<1-> If I had more time:\\\text{}\\
-\item<2-> 1. Improve colour schemes.\\\text{}\\
-\item<3-> 2. Somehow allow for higher-precision arithmetic.
+\item <1-> What I achieved:\\\text{}\\
+\item <2-> A program that allows the user to explore the Mandelbrot set, switch between four colourings, save zooms, and reopen zooms.
+\end{itemize}
+}
+
+\frame
+{
+\begin{itemize}
+\item <1-> If I could've done it differently:\\\text{}\\
+\item <2-> One colouring, but on a website\\
+\item <3-> A completely different program
+\end{itemize}
+}
+
+\frame
+{
+\begin{itemize}
+\item <1-> If I had more time:\\\text{}\\
+\item <2-> Learn more colouring algorithms\\
+\item <3-> Make Julia sets\\
+\item <4-> Implement on the web
 \end{itemize}
 }
 
@@ -391,4 +337,5 @@ The Mandelbrot set has infinite detail, a fact of which this program takes full 
 {
 Question period
 }
+
 \end{document}
