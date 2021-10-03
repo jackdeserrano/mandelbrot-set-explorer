@@ -1,6 +1,6 @@
 # Mandelbrot Set Explorer
-## Exordium
-This project was done in fulfillment of Mr. R. Van De Wiele's ICS4U culminating assignment. The project-delineating presentation is [here](presentation/presentation.tex). The project's flowchart is [here](flowchart.pdf). 
+## Introduction
+This project was done in fulfillment of Mr. Richard Van De Wiele's ICS4U culminating assignment. The project-delineating presentation is [here](presentation/presentation.tex). The project's flowchart is [here](flowchart.pdf). 
 
 This project displays the Mandelbrot set and allows the user to zoom in on desired sections, change colour schemes, save zooms, and open previously-saved zooms. Though the result appears subpar, I am delighted with the project's outcome and satisfied with the amount of time I devoted to it. Thank you to [Josh](https://github.com/Taggagii) for helping me debug the program and teaching me the Tkinter essentials. 
 
